@@ -1,0 +1,31 @@
+nattr     Students
+nattr     Courses
+nattr     Norelation
+tuplen    Badrelation
+tuplen    Students
+tuplen    Courses   
+infattr   Students  Minor
+infattr   Students  Majorcr
+infattr   Students  Totcr
+infattr   Courses   Badattr
+infattr   Courses   CName
+infattr   Courses   Credits
+count     Students
+count     Student
+count     Corses
+count     Courses
+project   Students     Name
+project   courses      Credits
+project   Students     Minor
+project   Students     Majcredit
+project   Courses      Credits
+project   Courses      Instr
+select    Students     Major !=  "BUS"
+select    Students     Totcr   <   39
+select    Courses      Credits  ==  3
+select    Courses      Instr  ==  "KELLER"
+select    Students     Name  >  40
+select    Courses      Instr  ==  "Keller"
+select    Courses      Credits  ==  "Keller"
+select    Courses      Instructor  ==  "Keller"
+quit
